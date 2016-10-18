@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sg_attr_unselected_text_color">#0066CC</color>
+    <color name="sg_attr_selected_text_color">#FFFFFF</color>
+    <color name="sg_attr_selected_color">#0066CC</color>
+    <color name="sg_attr_unselected_color">#FFFFFF</color>
+    <string-array name="three_state_option">
+        <item>精选</item>
+        <item>频道</item>
+        <item>动态</item>
+    </string-array>
+</resources>

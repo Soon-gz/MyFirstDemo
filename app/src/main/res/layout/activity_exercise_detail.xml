@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ese_title_height"
+        android:background="@color/baby_orange">
+
+
+        <ImageView
+            android:id="@+id/btn_back"
+            style="@style/imgback"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:src="@mipmap/back_white" />
+
+        <TextView
+            android:id="@+id/title_center"
+            style="@style/OtherTitleText"
+            android:text="活动详情" />
+        <ImageView
+            android:id="@+id/btn_share"
+            style="@style/imgback"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:src="@mipmap/ic_more_horiz_white_36dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="36dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_title"
+                style="@style/MeesageTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/text_time"
+                style="@style/MeesageSubtitleText"
+                android:layout_marginTop="24dp"
+                android:gravity="start"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/text_address"
+                style="@style/MeesageSubtitleText"
+                android:layout_marginTop="4dp"
+                android:gravity="start"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/text_money"
+                style="@style/MeesageSubtitleText"
+                android:layout_marginTop="4dp"
+                android:gravity="start"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/text_peoples"
+                style="@style/MeesageSubtitleText"
+                android:layout_marginTop="4dp"
+                android:gravity="start"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/text_stoptime"
+                style="@style/MeesageSubtitleText"
+                android:layout_marginTop="4dp"
+                android:gravity="start"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/text_contact"
+                style="@style/MeesageSubtitleText"
+                android:layout_marginTop="4dp"
+                android:gravity="start"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/text_detail"
+                style="@style/MeesageSubtitleText"
+                android:layout_marginTop="24dp"
+                android:gravity="start"
+                android:text="活动详情：" />
+
+            <TextView
+                android:id="@+id/text_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="start"
+                android:text=""
+                android:textColor="@color/text_black1"
+                android:textSize="@dimen/text_small_body" />
+        </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/textwant"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ese_title_height"
+        android:background="@color/baby_orange"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_small_body"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="我要参加"/>
+    <TextView
+        android:id="@+id/textrelease"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ese_title_height"
+        android:background="#FFEFA93F"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_small_body"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="取消报名"/>
+</LinearLayout>
+

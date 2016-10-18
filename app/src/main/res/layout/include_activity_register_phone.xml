@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/MatchWrap"
+        android:id="@+id/tite_changeMode"
+        android:layout_marginTop="40dp"
+        android:textSize="@dimen/text_body"
+        android:text="输入手机号免费验证信息" />
+
+    <com.abings.baby.widget.ClearEditText
+        android:id="@+id/input_phone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/shape_round_edit"
+        android:hint="输入手机号"
+        android:inputType="textVisiblePassword"
+        android:padding="5dp"
+        android:maxLength="20"
+        android:textSize="@dimen/text_body" />
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal">
+
+        <com.abings.baby.widget.ClearEditText
+            android:id="@+id/input_Code"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_round_edit"
+            android:hint="输入验证码"
+            android:inputType="textVisiblePassword"
+            android:padding="5dp"
+            android:maxLength="8"
+            android:textSize="@dimen/text_body" />
+
+        <TextView
+            android:id="@+id/btn_code"
+            android:layout_width="100dp"
+            android:textSize="@dimen/text_body"
+            android:text="获取验证码"
+            android:gravity="center"
+            android:background="@color/ese_orange"
+            android:textColor="@color/white"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/shape_round_green"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_large_body" />
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="点击下一步，表示你同意"
+            android:textColor="#7f7f7f"
+            android:textSize="@dimen/text_small_body"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="服务条款"
+            android:textColor="#00a39a"
+            android:textSize="@dimen/text_small_body"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="和"
+            android:textColor="#7f7f7f"
+            android:textSize="@dimen/text_small_body"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="隐私条款"
+            android:textColor="#00a39a"
+            android:textSize="@dimen/text_small_body"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/btn_ChangeMode"
+        android:layout_width="wrap_content"
+        android:text="使用邮箱？"
+        android:textColor="#12c696"
+        android:textSize="@dimen/text_large_body"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

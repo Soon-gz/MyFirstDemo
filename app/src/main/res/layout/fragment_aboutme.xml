@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/aboutmecontentmargin"
+        android:layout_marginRight="@dimen/aboutmecontentmargin"
+        android:layout_marginTop="@dimen/aboutmecontentmargin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/Matchdp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/AboutMeTextView"
+                android:text="姓名：" />
+
+            <EditText
+                android:id="@+id/fmAboutMe_et_name"
+                style="@style/AboutMeEditText" />
+
+        </LinearLayout>
+
+        <View style="@style/DivideLine" />
+
+
+        <LinearLayout
+            style="@style/Matchdp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/AboutMeTextView"
+                android:text="性别：" />
+
+            <EditText
+                android:id="@+id/fmAboutMe_et_sex"
+                style="@style/AboutMeEditText" />
+
+        </LinearLayout>
+
+        <View style="@style/DivideLine" />
+
+        <LinearLayout
+            style="@style/Matchdp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/AboutMeTextView"
+                android:text="关系：" />
+
+            <EditText
+                android:id="@+id/fmAboutMe_et_relation_desc"
+                style="@style/AboutMeEditText" />
+
+        </LinearLayout>
+
+        <View style="@style/DivideLine" />
+
+        <LinearLayout
+            style="@style/Matchdp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/AboutMeTextView"
+                android:text="生日：" />
+
+            <EditText
+                android:id="@+id/fmAboutMe_et_birthday"
+                style="@style/AboutMeEditText" />
+        </LinearLayout>
+
+        <View style="@style/DivideLine" />
+
+        <LinearLayout
+            style="@style/Matchdp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/AboutMeTextView"
+                android:text="电话：" />
+
+            <EditText
+                android:id="@+id/fmAboutMe_et_mobile_phone"
+                style="@style/AboutMeEditText"
+                android:inputType="phone" />
+        </LinearLayout>
+
+        <View style="@style/DivideLine" />
+
+        <LinearLayout
+            style="@style/Matchdp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/AboutMeTextView"
+                android:text="邮箱：" />
+
+            <EditText
+                android:id="@+id/fmAboutMe_et_email"
+                style="@style/AboutMeEditText" />
+        </LinearLayout>
+
+        <View style="@style/DivideLine" />
+
+        <LinearLayout
+            style="@style/Matchdp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/AboutMeTextView"
+                android:text="地址：" />
+
+            <EditText
+                android:id="@+id/fmAboutMe_et_address"
+                style="@style/AboutMeEditText" />
+        </LinearLayout>
+
+        <View style="@style/DivideLine" />
+
+
+        <com.abings.baby.ui.aboutme.NoScrollExpandable
+            android:id="@+id/fmAboutMe_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/divide_grey"
+            android:dividerHeight="0.5dp"
+            android:groupIndicator="@null"
+            android:visibility="gone"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+

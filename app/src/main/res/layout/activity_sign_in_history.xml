@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.signin.SingInHistoryActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_rl_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ese_title_height"
+        android:background="@color/baby_orange">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/BackText" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_centerInParent="true"
+            android:layout_height="30dp">
+            <TextView
+                android:id="@+id/leaftext"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_titleshape_left_selected"
+                android:gravity="center"
+                android:text="入园"
+                android:textColor="@color/ese_orange"
+                android:textSize="@dimen/text_body_big" />
+
+            <TextView
+                android:id="@+id/righttext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="出园"
+                android:textColor="@color/white"
+                android:background="@drawable/custom_titleshape_right"
+                android:textSize="@dimen/text_body_big" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/btn_clock"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/clock" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/signinVpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

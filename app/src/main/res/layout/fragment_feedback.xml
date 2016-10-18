@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatch"
+    android:background="@color/separator"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main_lay"
+        style="@style/MatchWrap"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/input_text"
+            style="@style/FeedBackEditText"
+            android:hint="哪里遇到问题了"
+            android:inputType="text"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        style="@style/MatchWrap"
+        android:layout_marginTop="28dp">
+
+        <TextView
+            android:id="@+id/btn_send"
+            style="@style/RgisterTitleText"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:background="@color/baby_orange"
+            android:text="发送" />
+
+    </FrameLayout>
+</LinearLayout>
+
+
+

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/maintitleheight"
+        android:background="@color/baby_orange">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/BackText" />
+
+        <TextView
+            android:id="@+id/text_title"
+            style="@style/OtherTitleText"
+            android:text="宝宝资料" />
+
+        <TextView
+            android:id="@+id/edit_save"
+            style="@style/TitleSmallText"
+            android:layout_alignParentRight="true"
+            android:text="编辑" />
+    </RelativeLayout>
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<LinearLayout-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circle_heads"
+                android:layout_width="@dimen/aboutmeheadimage"
+                android:layout_height="@dimen/aboutmeheadimage"
+                android:layout_marginTop="@dimen/aboutmeheadimgtop"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/left_menu_header_image"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="3dp" />
+
+
+            <LinearLayout
+                style="@style/MatchWrap"
+                android:layout_marginLeft="@dimen/aboutmecontentmargin"
+                android:layout_marginRight="@dimen/aboutmecontentmargin"
+                android:layout_marginTop="@dimen/aboutmecontentmargin"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    style="@style/Matchdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_name"
+                        style="@style/SmallText"
+                        android:text="姓名：" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/input_text_name"
+                            style="@style/SmallEditText"
+                            android:text=""
+                             />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <View style="@style/DivideLine" />
+
+                <LinearLayout
+                    android:id="@+id/gender_layout"
+                    style="@style/Matchdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_gender"
+                        style="@style/SmallText"
+                        android:text="性别：" />
+
+                    <TextView
+                        android:id="@+id/gender"
+                        style="@style/SmallEditText"
+                        android:layout_weight="1"
+                        android:maxLength="20"
+                        android:text=""
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <View style="@style/DivideLine" />
+
+                <LinearLayout
+                    style="@style/Matchdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_nick_name"
+                        style="@style/SmallText"
+                        android:text="昵称：" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/input_text_nick_name"
+                            style="@style/SmallEditText"
+                            android:text=""
+                             />
+
+                        <EditText
+                            android:id="@+id/input_edit_nick_name"
+                            style="@style/SmallEditText"
+                            android:maxLength="40"
+                            android:text=""
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <View style="@style/DivideLine" />
+
+                <LinearLayout
+                    android:id="@+id/birthday_layout"
+                    style="@style/Matchdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text_birthday"
+                        style="@style/SmallText"
+                        android:text="生日：" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/input_text_birthday"
+                            style="@style/SmallEditText"
+                            android:text=""
+                            android:textColor="@color/ese_grey_h" />
+                    </FrameLayout>
+                </LinearLayout>
+
+
+                <View style="@style/DivideLine" />
+
+
+                <LinearLayout
+                    style="@style/Matchdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/SmallText"
+                        android:text="学校：" />
+
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/text_school"
+                            style="@style/SmallEditText"
+                            android:text=""
+                            />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <View style="@style/DivideLine" />
+
+                <LinearLayout
+                    android:id="@+id/babyinfo_linear"
+                    style="@style/Matchdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/SmallText"
+                        android:text="班级：" />
+
+                    <TextView
+                        android:id="@+id/gradeclass"
+                        style="@style/SmallEditText"
+                        android:layout_weight="1"
+                        android:text="" />
+                </LinearLayout>
+
+                <View style="@style/DivideLine" />
+
+            </LinearLayout>
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
+</LinearLayout>
+
+
+

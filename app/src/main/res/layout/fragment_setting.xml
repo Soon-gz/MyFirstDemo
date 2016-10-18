@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toggle="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_lay"
+    style="@style/MatchMatch"
+    android:background="@color/background_grey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/SettingText"
+                android:text="新消息通知" />
+
+            <com.abings.baby.widget.ToggleButton
+                android:id="@+id/btn_notice"
+                android:layout_width="48dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="20dp"
+                toggle:isDefaultOn="false" />
+        </LinearLayout>
+
+        <View style="@style/DivideLine" />
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/SettingText"
+                android:text="信息是否公开给同班家长" />
+
+            <com.abings.baby.widget.ToggleButton
+                android:id="@+id/btn_public"
+                android:layout_width="48dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="20dp"
+                toggle:isDefaultOn="false" />
+        </LinearLayout>
+
+        <View style="@style/DivideLine" />
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/change_pwd"
+                style="@style/SettingText"
+                android:drawableRight="@drawable/forward111"
+                android:text="修改密码" />
+        </LinearLayout>
+
+        <View style="@style/DivideLine" />
+
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/clear"
+                style="@style/SettingText"
+                android:text="清除缓存" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/about"
+            style="@style/SettingText"
+            android:drawableRight="@drawable/forward111"
+            android:layout_gravity="center_vertical"
+            android:text="关于" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/exit"
+            style="@style/MatchWrap"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:text="退出登录"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_body" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

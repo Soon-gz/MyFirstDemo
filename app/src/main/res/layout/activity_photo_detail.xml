@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ese_title_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/baby_orange"
+        app:popupTheme="@style/NoTitleBar.PopupOverlay">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            style="@style/imgback"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:src="@mipmap/back_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:id="@+id/title"
+            android:layout_gravity="center"
+            android:text="2016年2月1日"
+            android:textSize="@dimen/other_title" />
+
+        <ImageView
+            android:id="@+id/btn_share"
+            style="@style/imgback"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:src="@mipmap/ic_more_horiz_white_36dp"
+            android:visibility="visible" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:scaleType="fitCenter" />
+
+    <RelativeLayout
+        style="@style/MatchWrap"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/MatchWrap"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_content"
+                style="@style/PhotoInfoText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="start"
+                android:maxLines="2"
+                android:padding="3dp"
+                android:ellipsize="end"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/text_name"
+                style="@style/PhotoInfoText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="3"
+                android:gravity="start"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/favorite_check"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:padding="2dp"
+                android:src="@mipmap/icon_product_collect" />
+
+            <TextView
+                android:id="@+id/favorite_num"
+                style="@style/PhotoInfoText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="start"
+                android:text=""
+                android:textColor="@color/ese_white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+

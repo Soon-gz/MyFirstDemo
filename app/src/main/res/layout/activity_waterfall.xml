@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ese_title_height"
+        android:background="@color/baby_orange">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            style="@style/imgback"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:src="@mipmap/back_white" />
+
+        <TextView
+            android:id="@+id/title_center"
+            style="@style/OtherTitleText"
+            android:text="我的相册" />
+    </RelativeLayout>
+
+    <!--<com.abings.baby.widget.refreshlayout.BGARefreshLayout-->
+        <!--android:id="@+id/rl_recyclerview_refresh"-->
+        <!--style="@style/MatchMatch"-->
+        <!--android:background="@color/white">-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="16dp"
+            android:clipToPadding="false"
+            android:scrollbars="none" />
+    <!--</com.abings.baby.widget.refreshlayout.BGARefreshLayout>-->
+
+</LinearLayout>
+

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/CenterTitle"
+        android:background="@color/baby_orange">
+
+        <TextView
+            android:id="@+id/association_btn_back"
+            style="@style/BackText" />
+
+        <TextView
+            android:id="@+id/text_title"
+            style="@style/OtherTitleText"
+            android:text="添加相关联系人" />
+
+        <TextView
+            android:id="@+id/association_btn_save"
+            style="@style/TitleSmallText"
+            android:layout_alignParentRight="true"
+            android:text="保存" />
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/association_circle_heads"
+        android:layout_width="114dp"
+        android:layout_height="114dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/left_menu_header_image"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="3dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            style="@style/Matchdp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/AboutMeTextView"
+                android:text="姓名：" />
+
+            <EditText
+                android:id="@+id/association_et_name"
+                style="@style/AboutMeEditText" />
+
+        </LinearLayout>
+
+        <View style="@style/DivideLine" />
+
+        <LinearLayout
+            style="@style/Matchdp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/AboutMeTextView"
+                android:text="与宝宝的关系：" />
+
+            <EditText
+                android:id="@+id/association_et_relation_desc"
+                style="@style/AboutMeEditText" />
+
+        </LinearLayout>
+
+        <View style="@style/DivideLine" />
+
+        <LinearLayout
+            style="@style/Matchdp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/AboutMeTextView"
+                android:text="电话：" />
+
+            <EditText
+                android:id="@+id/association_et_mobile_phone"
+                style="@style/AboutMeEditText"
+                android:inputType="phone" />
+
+        </LinearLayout>
+
+        <View style="@style/DivideLine" />
+
+    </LinearLayout>
+</LinearLayout>

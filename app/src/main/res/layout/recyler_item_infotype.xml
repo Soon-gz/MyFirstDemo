@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/mainitemheight"
+              android:background="#f7f7f7"
+              android:descendantFocusability="beforeDescendants"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:padding="@dimen/homelayoutcontentpading">
+
+
+    <ImageView
+        android:id="@+id/info_image"
+        android:layout_width="@dimen/homelayoutimg"
+        android:layout_height="@dimen/homelayoutimg"
+        android:layout_marginLeft="@dimen/homelayoutimgmag"
+        android:layout_marginRight="@dimen/homelayoutimgmag"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_journal"/>
+
+    <TextView
+        android:id="@+id/typeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/homelayoutcontentmarg"
+        android:gravity="center_vertical"
+        android:text="类别名"
+        android:textColor="@color/baby_orange"
+        android:textSize="@dimen/text_body"/>
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="@dimen/homelayoutlineheight"
+        android:layout_marginLeft="@dimen/homelayoutlinemargin"
+        android:background="@color/text_black">
+
+    </View>
+    <TextView
+        android:id="@+id/content"
+        style="@style/AutoWrap"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/homelayouttextmargin"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="11111111111"
+        android:textColor="@color/text_light_black"
+        android:textSize="@dimen/text_body"/>
+
+
+    <LinearLayout
+        android:id="@+id/tips"
+        style="@style/WrapWrap"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/main_new_news_tips"/>
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11"
+            android:textSize="@dimen/text_body"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

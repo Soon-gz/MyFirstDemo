@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abings.baby.ui.signin.SingInFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.abings.baby.widget.refreshlayout.BGARefreshLayout
+            android:id="@+id/sign_history_recyclerview_refresh"
+            style="@style/MatchMatch"
+            android:background="@color/white">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/sign_history_recyclerview_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:overScrollMode="never"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:scrollbars="none" />
+        </com.abings.baby.widget.refreshlayout.BGARefreshLayout>
+    </RelativeLayout>
+</LinearLayout>

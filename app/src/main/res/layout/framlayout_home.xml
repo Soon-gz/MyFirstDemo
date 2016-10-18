@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    style="@style/MatchMatch"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/banner_splash_pager"
+        android:layout_width="match_parent"
+        style="@style/MatchAuto"
+        android:src="@drawable/a"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="@dimen/homelayoutimgtop"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        style="@style/MatchAuto"
+        android:layout_marginTop="@dimen/homelayoutcontenttop"
+        android:background="#f7f7f7"/>
+
+
+</LinearLayout>
+
+
+
+

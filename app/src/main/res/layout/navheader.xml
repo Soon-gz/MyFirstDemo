@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/baby_orange"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="36dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/head_protrait"
+        android:layout_width="@dimen/team_column_width"
+        android:layout_height="@dimen/team_column_width"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/left_menu_header_image"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="3dp" />
+
+    <TextView
+        android:id="@+id/head_name"
+        style="@style/MatchWrap"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="姓名"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_title"
+        android:textStyle="bold" />
+</LinearLayout>

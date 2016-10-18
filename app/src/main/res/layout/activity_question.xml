@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ese_title_height"
+        android:background="@color/baby_orange"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/BackText" />
+
+        <TextView
+            android:id="@+id/title_center"
+            style="@style/WrapMatch"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="常见问题"
+            android:textColor="@color/ese_white"
+            android:textSize="@dimen/other_title" />
+    </RelativeLayout>
+
+    <com.abings.baby.widget.refreshlayout.BGARefreshLayout
+        android:id="@+id/rl_recyclerview_refresh"
+        style="@style/MatchMatch"
+        android:background="@color/white">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_recyclerview_data"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:overScrollMode="never"
+            android:padding="5dp"
+            android:scrollbars="none" />
+    </com.abings.baby.widget.refreshlayout.BGARefreshLayout>
+
+</LinearLayout>

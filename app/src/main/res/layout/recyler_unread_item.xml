@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:paddingLeft="5dp"
+           >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="8dp"
+                android:id="@+id/content_photo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/msg_content"
+                />
+            <LinearLayout
+                android:layout_toRightOf="@+id/content_photo"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="0dp"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:id="@+id/content_person"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:textColor="@color/text_black"
+                    android:layout_height="wrap_content"
+                    android:text="宝宝"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="@dimen/msg_unread_text_body1"
+                    />
+                <TextView
+                    android:id="@+id/content_person_rel"
+                    android:layout_below="@id/content_person"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/text_grey"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="妈妈"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="@dimen/msg_unread_text_body2"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_marginTop="16dp"
+                android:id="@+id/phone_icon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginRight="12dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/phone_icon"/>
+            <TextView
+                android:id="@+id/content_phone"
+                android:layout_width="wrap_content"
+                android:textColor="@color/text_black"
+                android:layout_marginRight="23dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/phone_icon"
+                android:layout_marginTop="15dp"
+                android:text=""
+                android:textSize="@dimen/msg_unread_text_phone"
+                />
+            <ImageView
+                android:layout_toRightOf="@+id/content_photo"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_height="1dp"
+                android:src="@color/baby_grey"/>
+
+
+
+        </RelativeLayout>
+
+</LinearLayout>

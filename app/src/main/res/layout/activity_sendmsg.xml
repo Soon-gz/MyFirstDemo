@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatch"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ese_title_height"
+        android:background="@color/baby_orange">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/BackText" />
+
+        <TextView
+            style="@style/OtherTitleText"
+            android:text="新消息" />
+
+        <TextView
+            android:id="@+id/send"
+            style="@style/TitleSmallText"
+            android:layout_alignParentRight="true"
+            android:text="发送" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_gravity="center_vertical"
+            android:text="发送给："
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_body" />
+
+        <com.abings.baby.widget.CustomEditText
+            android:id="@+id/target"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:drawablePadding="5dp"
+            android:freezesText="true"
+            android:gravity="center_vertical"
+            android:imeOptions="actionSearch"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:singleLine="true"
+            android:textColor="#FF4791E0"
+            android:textColorHint="#ffb5b5b5"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/add_contact"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:src="@drawable/add" />
+        <ImageView
+            android:id="@+id/clearMsg"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="4dp"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/umeng_socialize_x_button"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divide_grey" />
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/WrapWrap"
+            android:layout_gravity="center_vertical"
+            android:text="主题："
+
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_body" />
+
+        <com.abings.baby.widget.CustomEditText
+            android:id="@+id/msg_title"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/bg_search_input"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/umeng_socialize_x_button"
+            android:freezesText="true"
+            android:gravity="center_vertical"
+            android:imeOptions="actionSearch"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="4dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="#ffb5b5b5"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divide_grey" />
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/input_text"
+            style="@style/PublishEditText"
+            android:hint="请输入文字~"
+            android:layout_width="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/add_img"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="right"
+            android:scaleType="centerCrop"
+            android:src="@drawable/attach" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divide_grey" />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
+
+
+

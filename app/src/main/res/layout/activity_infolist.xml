@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ese_title_height"
+        android:background="@color/baby_orange">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            style="@style/imgback"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:src="@mipmap/back_white" />
+
+        <TextView
+            android:id="@+id/title_center"
+            style="@style/OtherTitleText"
+            android:text="班级" />
+
+        <LinearLayout
+            android:id="@+id/layout_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp">
+
+            <ImageView
+                android:id="@+id/btn_img"
+                android:layout_width="@dimen/baby_title_image"
+                android:layout_height="@dimen/baby_title_image"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:src="@drawable/toolbar_journal" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <com.abings.baby.widget.refreshlayout.BGARefreshLayout
+        android:id="@+id/rl_recyclerview_refresh"
+        style="@style/MatchMatch"
+        android:background="@color/white">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_recyclerview_data"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:overScrollMode="never"
+            android:padding="5dp"
+            android:scrollbars="none" />
+    </com.abings.baby.widget.refreshlayout.BGARefreshLayout>
+
+</LinearLayout>

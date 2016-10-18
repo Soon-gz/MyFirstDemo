@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f8f8f8"
+    tools:context="com.abings.baby.ui.feedback.FeedBackActivity">
+    <RelativeLayout
+        android:background="@color/baby_orange"
+        android:id="@+id/toolbar"
+        style="@style/CenterTitle"
+        android:gravity="center_vertical">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/text_back"
+                style="@style/BackText"
+                />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/title_center"
+            style="@style/OtherTitleText"
+            android:textStyle="bold"
+            android:text="意见反馈"/>
+        <TextView
+            android:id="@+id/btn_send"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginRight="4dp"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:text="发送" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/main_lay"
+        style="@style/MatchWrap"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/input_text"
+            style="@style/FeedBackEditText"
+            android:hint="哪里遇到问题了"
+            android:padding="8dp" />
+
+    </LinearLayout>
+</LinearLayout>

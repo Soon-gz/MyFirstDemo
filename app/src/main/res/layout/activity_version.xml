@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ese_title_height"
+        android:background="@color/baby_orange"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/BackText" />
+
+        <TextView
+            android:id="@+id/title_center"
+            style="@style/WrapMatch"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="版本信息"
+            android:textColor="@color/ese_white"
+            android:textSize="@dimen/other_title" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/MatchWrap"
+            android:gravity="center"
+            android:text="Hello baby(哈罗宝贝)"
+            android:textColor="@color/text_light_black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/version"
+            style="@style/MatchWrap"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="V1.1"
+            android:textColor="@color/text_light_black"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/time"
+            style="@style/MatchWrap"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="上线时间：2016年3月23日"
+            android:textColor="@color/text_light_black"
+            android:textSize="20sp" />
+
+        <TextView
+            style="@style/MatchWrap"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="由台州智垫信息科技有限公司开发"
+            android:textColor="@color/text_light_black"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

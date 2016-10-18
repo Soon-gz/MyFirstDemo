@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:background="@color/ese_white"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/sign_history_head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/msg_content"
+        />
+
+    <TextView
+        android:id="@+id/sign_history_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="家长昵称"
+        android:textColor="@color/text_black2"
+        android:layout_toRightOf="@id/sign_history_head"
+        android:layout_marginTop="15dp"
+        android:textSize="@dimen/text_body_big"
+        />
+
+    <TextView
+        android:id="@+id/sign_history_babyname"
+        android:layout_below="@+id/sign_history_username"
+        android:layout_toRightOf="@id/sign_history_head"
+        android:layout_marginTop="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_small_body"
+        android:text="宝宝昵称"/>
+
+    <TextView
+        android:id="@+id/sign_history_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sign_history_username"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/text_body"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/text_black2"
+        android:text="13889548954"/>
+
+    <TextView
+        android:id="@+id/sign_history_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="7dp"
+        android:textSize="@dimen/text_small_body"
+        android:text="17:45"/>
+
+    <ImageView
+        android:id="@+id/sign_history_inorout"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/signin"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+
+</RelativeLayout>

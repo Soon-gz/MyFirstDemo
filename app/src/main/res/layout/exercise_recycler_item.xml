@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp">
+
+
+    <LinearLayout
+        style="@style/AutoWrap"
+        android:background="#F2F2F2"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_marginTop="3dp"
+                android:id="@+id/subject"
+                style="@style/MatchWrap"
+                android:gravity="center_vertical"
+                android:layout_toLeftOf="@+id/time"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:text="test"
+                android:textSize="@dimen/text_body" />
+
+            <LinearLayout
+                style="@style/MatchWrap"
+                android:layout_below="@+id/subject"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:layout_toLeftOf="@+id/read_state"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/exercise_time"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="活动时间：2016.07.11"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/exercise_address"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="活动地点：上海迪斯尼山东科技疯狂的送积分卡"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/read_state"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                android:src="@drawable/main_new_news_tips" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

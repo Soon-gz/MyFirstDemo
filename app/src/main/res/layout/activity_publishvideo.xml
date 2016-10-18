@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ese_title_height"
+        android:background="@color/baby_orange">
+
+        <TextView
+            android:id="@+id/publishvideo_btn_back"
+            style="@style/BackText" />
+
+        <TextView
+            style="@style/OtherTitleText"
+            android:text="发布视频" />
+
+        <TextView
+            android:id="@+id/publishvideo_send"
+            style="@style/TitleSmallText"
+            android:layout_alignParentRight="true"
+            android:text="发送" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/publishvideo_et"
+            style="@style/PublishEditText"
+            android:layout_marginTop="12dp"
+            android:hint="这一刻的想法..." />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/publishvideo_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo" />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_arrow" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

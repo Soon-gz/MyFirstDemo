@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/MatchMatch"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/babybackground"
+    android:orientation="vertical">
+
+
+    <com.abings.baby.widget.refreshlayout.BGARefreshLayout
+        android:id="@+id/refreshLayout"
+        style="@style/MatchMatch"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/layout_master"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                style="@style/MatchWrap">
+
+                <TextView
+                    android:id="@+id/time"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="2016年3月24日"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_body"/>
+
+            </RelativeLayout>
+
+            <com.abings.baby.ui.home2.LoopViewPager
+                android:layout_marginTop="3dp"
+                android:id="@+id/viewPager"
+                style="@style/MatchAuto"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+    </com.abings.baby.widget.refreshlayout.BGARefreshLayout>
+
+    <ImageView
+        android:id="@+id/btn_public"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/main_add"/>
+
+
+</LinearLayout>
+
+
+
+

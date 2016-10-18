@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatch"
+    android:background="@drawable/home_bg"
+    android:orientation="vertical">
+
+    <com.abings.baby.widget.refreshlayout.BGARefreshLayout
+        android:id="@+id/refreshLayout"
+        style="@style/MatchWrap"
+        android:layout_height="0dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="48dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/layout_master"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout style="@style/MatchWrap">
+
+                <ImageView
+                    android:id="@+id/backwards"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/back_50" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/time"
+                        style="@style/WrapWrap"
+                        android:text="2016年3月24日"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_body" />
+
+                    <LinearLayout
+                        style="@style/WrapWrap"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/main_page_weather"
+                            style="@style/WrapWrap"
+                            android:layout_gravity="center_vertical"
+                            android:text="25~15℃"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_body" />
+
+                        <ImageView
+                            android:id="@+id/main_page_weather_image"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:src="@drawable/weather_cloudy" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/forward"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/forward_50" />
+
+            </RelativeLayout>
+
+            <com.bigkoo.convenientbanner.ConvenientBanner
+                android:id="@+id/banner_splash_pager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/btn_more"
+                android:layout_width="40dp"
+                android:layout_height="24dp"
+                android:layout_gravity="right"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="更多"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_body" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="#f7f7f7" />
+
+        </LinearLayout>
+
+
+    </com.abings.baby.widget.refreshlayout.BGARefreshLayout>
+
+    <ImageView
+        android:id="@+id/btn_public"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/main_add" />
+
+</LinearLayout>
+
+
+
+

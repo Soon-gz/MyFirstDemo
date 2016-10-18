@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/base_bg"-->
+        <!--android:padding="6dp"-->
+        <!--android:focusable="true"-->
+        <!--android:focusableInTouchMode="true">-->
+
+        <!--<com.abings.baby.widget.CustomEditText-->
+            <!--android:id="@+id/school_friend_member_search_input"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="27dp"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:background="@drawable/bg_search_input"-->
+            <!--android:drawableLeft="@drawable/ic_search"-->
+            <!--android:drawablePadding="5dp"-->
+            <!--android:paddingRight="5dp"-->
+            <!--android:drawableRight="@drawable/umeng_socialize_x_button"-->
+            <!--android:freezesText="true"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:hint="搜索"-->
+            <!--android:imeOptions="actionSearch"-->
+            <!--android:paddingBottom="2dp"-->
+            <!--android:paddingTop="2dp"-->
+            <!--android:singleLine="true"-->
+            <!--android:textColor="@android:color/black"-->
+            <!--android:textColorHint="#ffb5b5b5"-->
+            <!--android:textSize="13sp" />-->
+    <!--</LinearLayout>-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.abings.baby.widget.refreshlayout.BGARefreshLayout
+            android:id="@+id/rl_recyclerview_refresh"
+            style="@style/MatchMatch"
+            android:background="@color/white">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_recyclerview_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:overScrollMode="never"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:scrollbars="none" />
+        </com.abings.baby.widget.refreshlayout.BGARefreshLayout>
+        <LinearLayout
+            android:id="@+id/tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divide_grey"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/date"
+                style="@style/MatchWrap"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="更新日期：--/--/--"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_small_body" />
+
+            <TextView
+                android:id="@+id/count"
+                style="@style/MatchWrap"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="--封未读"
+                android:textColor="@color/baby_orange"
+                android:textSize="@dimen/text_small_body" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

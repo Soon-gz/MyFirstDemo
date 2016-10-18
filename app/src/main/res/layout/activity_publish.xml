@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchMatch"
+    android:background="#f9f9f9"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ese_title_height"
+        android:background="@color/baby_orange">
+
+        <TextView
+            android:id="@+id/btn_back"
+            style="@style/BackText"/>
+
+        <TextView
+            android:id="@+id/title_center"
+            style="@style/OtherTitleText"
+            android:text="发布文字" />
+
+        <TextView
+            android:id="@+id/publish"
+            style="@style/TitleSmallText"
+            android:layout_alignParentRight="true"
+            android:text="发送"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <EditText
+            android:id="@+id/input_text"
+            style="@style/PublishEditText"
+            android:layout_marginTop="12dp"
+            android:maxLength="140"
+            android:hint="请输入内容(140字以内)"/>
+        <TextView
+            android:id="@+id/aligntextNum"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="已输入字数：0"/>
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"/>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f9f9f9"
+        android:gravity="right"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/selector_publish_radio_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="午餐"
+            android:checked="true"
+            android:textColor="@drawable/selector_publish_radio_text"/>
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/selector_publish_radio_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="拓展"
+            android:textColor="@drawable/selector_publish_radio_text"/>
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:visibility="gone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/selector_publish_radio_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="活动"
+            android:textColor="@drawable/selector_publish_radio_text"/>
+
+        <RadioButton
+            android:id="@+id/radio4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/selector_publish_radio_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="动态"
+            android:textColor="@drawable/selector_publish_radio_text"/>
+    </RadioGroup>
+
+</LinearLayout>
+
+
+

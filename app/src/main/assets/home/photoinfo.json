@@ -1,0 +1,16 @@
+{
+  "state": "0",
+  "result": [
+    {
+      "pk_image_news_image_id": "2",
+      "fk_image_news_id": "6",
+      "image": "201602220031032465.jpg",
+      "create_datetime": "2016/2/22 00:31:04",
+      "content": "!11",
+      "teacher_name": "",
+      "user_name": "王大明",
+      "like_count": "0",
+      "fk_user_type": "1"
+    }
+  ]
+}

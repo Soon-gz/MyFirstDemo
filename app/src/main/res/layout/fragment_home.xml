@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/MatchMatch"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/babybackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/MatchWrap"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/time"
+            style="@style/WrapWrap"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="2016年3月24日"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_body"/>
+
+        <LinearLayout
+            style="@style/WrapWrap"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/main_page_weather"
+                style="@style/WrapWrap"
+                android:layout_gravity="center_vertical"
+                android:text="25~15℃"
+                android:visibility="invisible"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_body"/>
+
+            <ImageView
+                android:id="@+id/main_page_weather_image"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:visibility="invisible"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/weather_cloudy"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <com.abings.baby.ui.home2.LoopViewPager
+        android:id="@+id/viewPager"
+        style="@style/MatchAuto"
+        android:layout_height="0dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
+
+
+
+

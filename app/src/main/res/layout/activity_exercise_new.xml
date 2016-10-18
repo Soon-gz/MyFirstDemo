@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ese_title_height"
+        android:background="@color/baby_orange">
+
+
+        <ImageView
+            android:id="@+id/btn_back"
+            style="@style/imgback"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:src="@mipmap/back_white" />
+
+        <TextView
+            android:id="@+id/title_center"
+            style="@style/OtherTitleText"
+            android:text="发起活动" />
+
+        <TextView
+            android:id="@+id/exercise_new"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingRight="11dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:text="发布"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                style="@style/Matchdp"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/SmallText"
+                    android:text="发起目标：" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/exercise_new_name"
+                        style="@style/SmallEditText"
+                        android:inputType="textVisiblePassword"
+                        android:text=""
+                        android:gravity="center_vertical"
+                         />
+                </FrameLayout>
+                <ImageView
+                    android:id="@+id/chooseclass"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="7dp"
+                    android:src="@drawable/addmid"/>
+                <ImageView
+                    android:id="@+id/clear"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="6dp"
+                    android:visibility="gone"
+                    android:src="@drawable/umeng_socialize_x_button"/>
+            </LinearLayout>
+            <View style="@style/DivideLine" />
+
+            <LinearLayout
+                style="@style/Matchdp"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/SmallText"
+                    android:text="活动标题：" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/exercise_new_title"
+                        style="@style/SmallEditText"
+                        android:inputType="textVisiblePassword"
+                        android:maxLength="40"
+                        android:text=""
+                        android:gravity="center_vertical"
+                         />
+                </FrameLayout>
+            </LinearLayout>
+            <View style="@style/DivideLine" />
+
+            <LinearLayout
+                style="@style/Matchdp"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/SmallText"
+                    android:text="活动地点：" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/exercise_new_address"
+                        style="@style/SmallEditText"
+                        android:inputType="textVisiblePassword"
+                        android:maxLength="40"
+                        android:text=""
+                        android:gravity="center_vertical"
+                         />
+                </FrameLayout>
+            </LinearLayout>
+            <View style="@style/DivideLine" />
+
+            <LinearLayout
+                style="@style/Matchdp"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/SmallText"
+                    android:text="活动时间：" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/exercise_new_time"
+                        style="@style/SmallEditText"
+                        android:inputType="textVisiblePassword"
+                        android:maxLength="40"
+                        android:text=""
+                        android:gravity="center_vertical"
+                         />
+                </FrameLayout>
+            </LinearLayout>
+            <View style="@style/DivideLine" />
+
+            <LinearLayout
+                style="@style/Matchdp"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/SmallText"
+                    android:text="活动人数：" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/exercise_new_people"
+                        style="@style/SmallEditText"
+                        android:inputType="textVisiblePassword"
+                        android:maxLength="40"
+                        android:text=""
+                        android:gravity="center_vertical"
+                        />
+                </FrameLayout>
+            </LinearLayout>
+            <View style="@style/DivideLine" />
+
+            <LinearLayout
+                style="@style/Matchdp"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/SmallText"
+                    android:text="活动费用：" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/exercise_new_money"
+                        style="@style/SmallEditText"
+                        android:inputType="textVisiblePassword"
+                        android:maxLength="40"
+                        android:text=""
+                        android:gravity="center_vertical"
+                        />
+                </FrameLayout>
+            </LinearLayout>
+            <View style="@style/DivideLine" />
+
+            <LinearLayout
+                style="@style/Matchdp"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/SmallText"
+                    android:text="报名截至：" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/exercise_new_stoptime"
+                        style="@style/SmallEditText"
+                        android:inputType="textVisiblePassword"
+                        android:maxLength="40"
+                        android:text=""
+                        android:gravity="center_vertical"
+                         />
+                </FrameLayout>
+            </LinearLayout>
+            <View style="@style/DivideLine" />
+
+            <LinearLayout
+                style="@style/Matchdp"
+                android:padding="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/SmallText"
+                    android:text="活动详情：" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MatchWrap"
+                android:orientation="vertical"
+                >
+                <EditText
+                    android:id="@+id/exercise_new_content"
+                    style="@style/ContentEditText"
+                    android:hint="输入活动详情"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

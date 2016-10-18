@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="maintitlemargin">2dp</dimen>
+    <dimen name="maintitleheight">35dp</dimen>
+    <dimen name="mainsearchimg">7dp</dimen>
+    <dimen name="homelayoutimgtop">1dp</dimen>
+    <dimen name="homelayoutcontenttop">5dp</dimen>
+    <dimen name="homelayoutcontentpading">2dp</dimen>
+    <dimen name="homelayoutimg">25dp</dimen>
+    <dimen name="homelayoutimgmag">2dp</dimen>
+    <dimen name="homelayoutcontentmarg">4dp</dimen>
+    <dimen name="homelayoutlineheight">17dp</dimen>
+    <dimen name="homelayoutlinemargin">5dp</dimen>
+    <dimen name="homelayouttextmargin">11dp</dimen>
+    <dimen name="aboutmetextpading">4dp</dimen>
+    <dimen name="aboutmetextmargin">8dp</dimen>
+    <dimen name="aboutmeheadimage">99dp</dimen>
+    <dimen name="aboutmeheadimgtop">6dp</dimen>
+    <dimen name="aboutmecontentmargin">15dp</dimen>
+    <dimen name="contentitemheight">44dp</dimen>
+    <dimen name="aboutmetext">6dp</dimen>
+    <dimen name="aboutmetextpadingtop">5dp</dimen>
+    <dimen name="mainsearch">35dp</dimen>
+    <dimen name="mainitemheight">33dp</dimen>
+
+
+    <dimen name="ese_title_height">36dp</dimen>
+    <dimen name="text_body">13sp</dimen>
+    <dimen name="other_title">15sp</dimen>
+    <dimen name="ese_title_middle_fontsize">16sp</dimen>
+    <dimen name="text_small_body">12sp</dimen>
+    <dimen name="text_title">15sp</dimen>
+
+
+</resources>

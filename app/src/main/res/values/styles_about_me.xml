@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AboutMeTextView" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/text_small_body</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">@dimen/aboutmetextpadingtop</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="AboutMeEditText" parent="android:Widget.EditText">
+        <item name="android:textSize">@dimen/text_small_body</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:background">@drawable/shape_edit</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingTop">@dimen/aboutmetextpadingtop</item>
+        <item name="android:paddingBottom">@dimen/aboutmetext</item>
+        <item name="android:paddingLeft">@dimen/aboutmetextpadingtop</item>
+        <item name="android:paddingRight">@dimen/aboutmetextpadingtop</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <string name="add_association">addAssociation</string>
+</resources>
